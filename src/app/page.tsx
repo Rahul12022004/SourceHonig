@@ -1,37 +1,32 @@
-import TopBar from "@/components/TopBar";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import RebrandBanner from "@/components/RebrandBanner";
-import Solutions from "@/components/Solutions";
-import Products from "@/components/Products";
-import Industries from "@/components/Industries";
-import Facilities from "@/components/Facilities";
-import Stats from "@/components/Stats";
-import About from "@/components/About";
-import MissionVision from "@/components/MissionVision";
-import BusinessNetwork from "@/components/BusinessNetwork";
-import Leadership from "@/components/Leadership";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+"use client";
+
+import { useState } from "react";
+import LoadingScreen from "@/components/loading/LoadingScreen";
+import NavHeader from "@/components/nav/NavHeader";
+import HeroSection from "@/components/hero/HeroSection";
+import SolutionsSection from "@/components/sections/SolutionsSection";
+import HorizontalScroll from "@/components/sections/HorizontalScroll";
+import StatsSection from "@/components/sections/StatsSection";
+import TerminalSection from "@/components/sections/TerminalSection";
+import AboutSection from "@/components/sections/AboutSection";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <>
-      <TopBar />
-      <Header />
+      {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
+      <NavHeader />
       <main>
-        <Hero />
-        <RebrandBanner />
-        <Solutions />
-        <Products />
-        <Industries />
-        <Facilities />
-        <Stats />
-        <About />
-        <MissionVision />
-        <BusinessNetwork />
-        <Leadership />
-        <Contact />
+        <HeroSection />
+        <SolutionsSection />
+        <HorizontalScroll />
+        <StatsSection />
+        <TerminalSection />
+        <AboutSection />
+        <ContactSection />
       </main>
       <Footer />
     </>
