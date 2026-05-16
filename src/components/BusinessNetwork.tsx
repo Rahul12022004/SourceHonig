@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import { Wrench, Grid2x2, Snowflake, FlaskConical } from "lucide-react";
@@ -87,3 +87,4 @@ export default function BusinessNetwork() {
     </section>
   );
 }
+

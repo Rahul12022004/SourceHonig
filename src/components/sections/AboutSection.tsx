@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -22,8 +22,8 @@ const network = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-28" style={{ backgroundColor: "#080808" }}>
-      <div className="absolute left-0 right-0 h-px" style={{ backgroundColor: "#1f1f1f" }} />
+    <section id="about" className="py-28" style={{ backgroundColor: "#070B14" }}>
+      <div className="absolute left-0 right-0 h-px" style={{ backgroundColor: "#1A2744" }} />
       <div className="max-w-[1240px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Content */}
@@ -36,7 +36,7 @@ export default function AboutSection() {
             <SectionLabel>About</SectionLabel>
             <h2
               className="text-[clamp(2rem,4vw,3rem)] font-bold mb-6 leading-tight"
-              style={{ color: "#E0E0E0" }}
+              style={{ color: "#F1F5F9" }}
             >
               Redefining Procurement with the Power of Collaboration
             </h2>
@@ -44,7 +44,7 @@ export default function AboutSection() {
               Welcome to Honey Export, where we redefine procurement with
               the power of collaboration. Established June 2018 by Piyush
               Patel, we specialize in sourcing products for the North American
-              market — from display walk-in coolers and metallic storage racks
+              market â€” from display walk-in coolers and metallic storage racks
               to laser-cut parts and custom packaging.
             </p>
             <p className="text-sm leading-relaxed mb-8" style={{ color: "#666" }}>
@@ -56,8 +56,8 @@ export default function AboutSection() {
             <div className="space-y-3 mb-10">
               {highlights.map((h) => (
                 <div key={h} className="flex items-center gap-3">
-                  <CheckCircle2 size={16} style={{ color: "#FF5500", flexShrink: 0 }} />
-                  <span className="text-sm" style={{ color: "#E0E0E0" }}>{h}</span>
+                  <CheckCircle2 size={16} style={{ color: "#3B82F6", flexShrink: 0 }} />
+                  <span className="text-sm" style={{ color: "#F1F5F9" }}>{h}</span>
                 </div>
               ))}
             </div>
@@ -75,16 +75,16 @@ export default function AboutSection() {
             {/* Leader card */}
             <div
               className="relative p-6 mb-6"
-              style={{ backgroundColor: "#111", border: "1px solid #1f1f1f" }}
+              style={{ backgroundColor: "#111", border: "1px solid #1A2744" }}
             >
               <div
                 className="absolute top-0 left-0 right-0 h-[2px]"
-                style={{ background: "linear-gradient(90deg, #FF5500, #FF550000)" }}
+                style={{ background: "linear-gradient(90deg, #3B82F6, #3B82F600)" }}
               />
               <div className="flex gap-5 items-start">
                 <div
                   className="w-20 h-20 flex-shrink-0 overflow-hidden"
-                  style={{ border: "1px solid #1f1f1f" }}
+                  style={{ border: "1px solid #1A2744" }}
                 >
                   <Image
                     src="/piyush-patel.jpeg"
@@ -95,10 +95,10 @@ export default function AboutSection() {
                   />
                 </div>
                 <div>
-                  <div className="text-base font-semibold mb-0.5" style={{ color: "#E0E0E0" }}>
+                  <div className="text-base font-semibold mb-0.5" style={{ color: "#F1F5F9" }}>
                     Piyush Patel
                   </div>
-                  <div className="text-[11px] tracking-widest uppercase mb-3" style={{ color: "#FF5500" }}>
+                  <div className="text-[11px] tracking-widest uppercase mb-3" style={{ color: "#3B82F6" }}>
                     Founder & CEO
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: "#666" }}>
@@ -116,9 +116,9 @@ export default function AboutSection() {
                 <div
                   key={n.name}
                   className="p-4 relative"
-                  style={{ backgroundColor: "#0d0d0d", border: "1px solid #1f1f1f" }}
+                  style={{ backgroundColor: "#080E1C", border: "1px solid #1A2744" }}
                 >
-                  <div className="text-xs font-semibold mb-1" style={{ color: "#E0E0E0" }}>
+                  <div className="text-xs font-semibold mb-1" style={{ color: "#F1F5F9" }}>
                     {n.name}
                   </div>
                   <div className="text-[11px]" style={{ color: "#666" }}>{n.desc}</div>
@@ -127,7 +127,7 @@ export default function AboutSection() {
             </div>
 
             {/* Clients */}
-            <div className="mt-6 pt-6 border-t" style={{ borderColor: "#1f1f1f" }}>
+            <div className="mt-6 pt-6 border-t" style={{ borderColor: "#1A2744" }}>
               <div className="text-[10px] tracking-widest mb-3" style={{ color: "#666" }}>
                 TRUSTED BY
               </div>
@@ -136,7 +136,7 @@ export default function AboutSection() {
                   <span
                     key={c}
                     className="px-3 py-1 text-[11px] tracking-wide"
-                    style={{ border: "1px solid #1f1f1f", color: "#666" }}
+                    style={{ border: "1px solid #1A2744", color: "#666" }}
                   >
                     {c}
                   </span>
@@ -149,3 +149,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

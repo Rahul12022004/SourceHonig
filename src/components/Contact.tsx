@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "motion/react";
@@ -150,3 +150,4 @@ export default function Contact() {
     </section>
   );
 }
+

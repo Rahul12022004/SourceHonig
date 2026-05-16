@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
@@ -102,3 +102,4 @@ export default function Stats() {
     </section>
   );
 }
+

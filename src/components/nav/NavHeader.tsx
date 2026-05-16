@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -38,7 +38,7 @@ export default function NavHeader() {
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         backgroundColor: "rgba(8,8,8,0.7)",
-        borderBottom: "1px solid #1f1f1f",
+        borderBottom: "1px solid #1A2744",
       }}
     >
       <div className="max-w-[1240px] mx-auto flex items-center justify-between">
@@ -56,7 +56,7 @@ export default function NavHeader() {
           </span>
           <span
             className="text-lg font-light tracking-[0.2em]"
-            style={{ color: "#FF5500", fontFamily: "var(--font-lora)" }}
+            style={{ color: "#3B82F6", fontFamily: "var(--font-lora)" }}
           >
             EXPORT
           </span>
@@ -77,7 +77,7 @@ export default function NavHeader() {
               onClick={(e) => { e.preventDefault(); go(l.href); }}
               className="text-[11px] tracking-widest uppercase px-4 py-2 transition-colors duration-300"
               style={{ color: "#666" }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#E0E0E0")}
+              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#F1F5F9")}
               onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#666")}
             >
               {l.label}
@@ -88,18 +88,18 @@ export default function NavHeader() {
             onClick={(e) => { e.preventDefault(); go("#contact"); }}
             className="text-[11px] tracking-widest uppercase px-4 py-2 ml-2 transition-all duration-300"
             style={{
-              border: "1px solid #FF5500",
-              color: "#FF5500",
+              border: "1px solid #3B82F6",
+              color: "#3B82F6",
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget;
-              el.style.backgroundColor = "#FF5500";
-              el.style.color = "#080808";
+              el.style.backgroundColor = "#3B82F6";
+              el.style.color = "#070B14";
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget;
               el.style.backgroundColor = "transparent";
-              el.style.color = "#FF5500";
+              el.style.color = "#3B82F6";
             }}
           >
             Request Quote
@@ -123,7 +123,7 @@ export default function NavHeader() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden overflow-hidden border-t mt-4"
-            style={{ borderColor: "#1f1f1f" }}
+            style={{ borderColor: "#1A2744" }}
           >
             {links.map((l) => (
               <a
@@ -142,3 +142,4 @@ export default function NavHeader() {
     </motion.header>
   );
 }
+

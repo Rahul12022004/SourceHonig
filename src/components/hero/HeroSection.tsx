@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
@@ -32,9 +32,9 @@ export default function HeroSection() {
     <section
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ backgroundColor: "#080808" }}
+      style={{ backgroundColor: "#070B14" }}
     >
-      {/* R3F Canvas — behind everything */}
+      {/* R3F Canvas â€” behind everything */}
       <div className="absolute inset-0 z-0">
         <ContainerScene />
       </div>
@@ -43,7 +43,7 @@ export default function HeroSection() {
       <div
         className="absolute bottom-0 left-0 right-0 h-48 z-[1] pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, transparent, #080808)",
+          background: "linear-gradient(to bottom, transparent, #070B14)",
         }}
       />
 
@@ -61,12 +61,12 @@ export default function HeroSection() {
           style={{ fontFamily: "var(--font-lora)" }}
           data-reveal
         >
-          <span style={{ color: "#E0E0E0" }}>THE POWER OF</span>
+          <span style={{ color: "#F1F5F9" }}>THE POWER OF</span>
           <br />
           <span
             style={{
-              color: "#FF5500",
-              textShadow: "0 0 40px #FF550060, 0 0 80px #FF550030",
+              color: "#3B82F6",
+              textShadow: "0 0 40px #3B82F660, 0 0 80px #3B82F630",
             }}
           >
             COLLABORATION
@@ -98,12 +98,12 @@ export default function HeroSection() {
         >
           <div
             className="w-6 h-10 rounded-full border flex items-start justify-center p-1"
-            style={{ borderColor: "#1f1f1f" }}
+            style={{ borderColor: "#1A2744" }}
           >
             <div
               className="w-1 h-2 rounded-full"
               style={{
-                backgroundColor: "#FF5500",
+                backgroundColor: "#3B82F6",
                 animation: "bounce 1.5s ease-in-out infinite",
               }}
             />
@@ -119,3 +119,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 
@@ -16,21 +16,21 @@ export default function GlowButton({ children, href, variant = "primary", onClic
   const styles =
     variant === "primary"
       ? {
-          backgroundColor: "#FF5500",
-          color: "#080808",
-          border: "1px solid #FF5500",
-          boxShadow: "0 0 20px #FF550040",
+          backgroundColor: "#3B82F6",
+          color: "#070B14",
+          border: "1px solid #3B82F6",
+          boxShadow: "0 0 20px #3B82F640",
         }
       : {
           backgroundColor: "transparent",
-          color: "#E0E0E0",
-          border: "1px solid #1f1f1f",
+          color: "#F1F5F9",
+          border: "1px solid #1A2744",
         };
 
   const hoverStyle =
     variant === "primary"
-      ? { boxShadow: "0 0 40px #FF550070, 0 0 80px #FF550030" }
-      : { borderColor: "#FF5500", color: "#FF5500" };
+      ? { boxShadow: "0 0 40px #3B82F670, 0 0 80px #3B82F630" }
+      : { borderColor: "#3B82F6", color: "#3B82F6" };
 
   const el = (
     <motion.span
@@ -61,3 +61,4 @@ export default function GlowButton({ children, href, variant = "primary", onClic
   }
   return <button onClick={onClick}>{el}</button>;
 }
+

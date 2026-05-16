@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 
@@ -31,9 +31,9 @@ export default function RebrandBanner() {
             >
               Precision Manufacturing &amp; Global Sourcing
             </h3>
-            <p className="text-sm leading-relaxed" style={{ color: "#4a4a5a" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#64748B" }}>
               Honey Export delivers sourcing excellence and collaborative
-              partnerships in the procurement industry — specializing in sheet
+              partnerships in the procurement industry â€” specializing in sheet
               metal fabrication, cold room solutions, and custom manufacturing
               for the North American market.
             </p>
@@ -43,3 +43,4 @@ export default function RebrandBanner() {
     </section>
   );
 }
+

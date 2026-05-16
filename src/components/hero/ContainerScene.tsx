@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -76,7 +76,7 @@ export default function ContainerScene() {
       <ambientLight intensity={0.25} />
       <spotLight
         position={[0, 10, 4]}
-        color="#FF5500"
+        color="#3B82F6"
         intensity={2.5}
         angle={0.45}
         penumbra={0.6}
@@ -84,7 +84,7 @@ export default function ContainerScene() {
       />
       <spotLight
         position={[-8, 6, 2]}
-        color="#00F0FF"
+        color="#F59E0B"
         intensity={0.4}
         angle={0.6}
         penumbra={1}
@@ -94,3 +94,4 @@ export default function ContainerScene() {
     </Canvas>
   );
 }
+

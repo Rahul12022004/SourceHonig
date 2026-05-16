@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "motion/react";
@@ -39,7 +39,7 @@ export default function StatsSection() {
       id="stats"
       ref={ref}
       className="py-28 relative overflow-hidden"
-      style={{ backgroundColor: "#080808" }}
+      style={{ backgroundColor: "#070B14" }}
     >
       {/* radial glow */}
       <div
@@ -50,40 +50,40 @@ export default function StatsSection() {
         }}
       />
       {/* top border */}
-      <div className="absolute top-0 left-0 right-0 h-px" style={{ backgroundColor: "#1f1f1f" }} />
-      <div className="absolute bottom-0 left-0 right-0 h-px" style={{ backgroundColor: "#1f1f1f" }} />
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ backgroundColor: "#1A2744" }} />
+      <div className="absolute bottom-0 left-0 right-0 h-px" style={{ backgroundColor: "#1A2744" }} />
 
       <div className="max-w-[1240px] mx-auto px-6 relative">
         <div className="text-center mb-20">
           <SectionLabel>By The Numbers</SectionLabel>
           <h2
             className="text-[clamp(2rem,4vw,3rem)] font-bold"
-            style={{ color: "#E0E0E0" }}
+            style={{ color: "#F1F5F9" }}
           >
             The Power of Collaboration
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px" style={{ backgroundColor: "#1f1f1f" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px" style={{ backgroundColor: "#1A2744" }}>
           {stats.map((s) => (
             <div
               key={s.label}
               className="flex flex-col items-center justify-center py-16 px-8 text-center"
-              style={{ backgroundColor: "#080808" }}
+              style={{ backgroundColor: "#070B14" }}
             >
               <div className="leading-none mb-3">
                 <span
                   className="text-[clamp(3rem,6vw,5rem)] font-extrabold tabular-nums"
                   style={{
-                    color: "#FF5500",
-                    textShadow: "0 0 40px #FF550050",
+                    color: "#3B82F6",
+                    textShadow: "0 0 40px #3B82F650",
                   }}
                 >
                   <AnimatedNumber target={s.target} started={inView} />
                 </span>
                 <span
                   className="text-[clamp(2rem,4vw,3.5rem)] font-bold"
-                  style={{ color: "#FF5500" }}
+                  style={{ color: "#3B82F6" }}
                 >
                   {s.suffix}
                 </span>
@@ -101,3 +101,4 @@ export default function StatsSection() {
     </section>
   );
 }
+

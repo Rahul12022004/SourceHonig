@@ -1,12 +1,12 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const nodes = [
-  { id: "IND", label: "Ahmedabad, India", x: "62%", y: "52%", color: "#FF5500" },
-  { id: "DXB", label: "Dubai, UAE", x: "58%", y: "44%", color: "#00F0FF" },
-  { id: "USA", label: "North America", x: "22%", y: "36%", color: "#FF5500" },
+  { id: "IND", label: "Ahmedabad, India", x: "62%", y: "52%", color: "#3B82F6" },
+  { id: "DXB", label: "Dubai, UAE", x: "58%", y: "44%", color: "#F59E0B" },
+  { id: "USA", label: "North America", x: "22%", y: "36%", color: "#3B82F6" },
 ];
 
 const panels = [
@@ -20,9 +20,9 @@ export default function TerminalSection() {
   return (
     <section
       className="py-28 relative"
-      style={{ backgroundColor: "#050505" }}
+      style={{ backgroundColor: "#060A12" }}
     >
-      <div className="absolute top-0 left-0 right-0 h-px" style={{ backgroundColor: "#1f1f1f" }} />
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ backgroundColor: "#1A2744" }} />
       <div className="max-w-[1240px] mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,7 +33,7 @@ export default function TerminalSection() {
           <SectionLabel color="cyan">Global Network</SectionLabel>
           <h2
             className="text-[clamp(2rem,4vw,3.5rem)] font-bold"
-            style={{ color: "#E0E0E0" }}
+            style={{ color: "#F1F5F9" }}
           >
             Logistics Terminal
           </h2>
@@ -47,8 +47,8 @@ export default function TerminalSection() {
             viewport={{ once: true }}
             className="relative rounded-sm overflow-hidden"
             style={{
-              backgroundColor: "#0a0a0a",
-              border: "1px solid #1f1f1f",
+              backgroundColor: "#070B14",
+              border: "1px solid #1A2744",
               minHeight: "420px",
             }}
           >
@@ -67,11 +67,11 @@ export default function TerminalSection() {
               className="absolute inset-0 w-full h-full"
               preserveAspectRatio="none"
             >
-              {/* India → Dubai */}
+              {/* India â†’ Dubai */}
               <motion.path
                 d="M 62% 52% Q 60% 40% 58% 44%"
                 fill="none"
-                stroke="#00F0FF"
+                stroke="#F59E0B"
                 strokeWidth="1"
                 strokeDasharray="4 4"
                 initial={{ pathLength: 0 }}
@@ -79,11 +79,11 @@ export default function TerminalSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 2, ease: "linear", delay: 0.5 }}
               />
-              {/* Dubai → USA */}
+              {/* Dubai â†’ USA */}
               <motion.path
                 d="M 58% 44% Q 40% 25% 22% 36%"
                 fill="none"
-                stroke="#FF5500"
+                stroke="#3B82F6"
                 strokeWidth="1"
                 strokeDasharray="4 4"
                 initial={{ pathLength: 0 }}
@@ -117,7 +117,7 @@ export default function TerminalSection() {
                     color: n.color,
                   }}
                 >
-                  {n.id} — {n.label}
+                  {n.id} â€” {n.label}
                 </div>
               </div>
             ))}
@@ -145,16 +145,16 @@ export default function TerminalSection() {
                 style={{
                   backgroundColor: "rgba(255,255,255,0.02)",
                   backdropFilter: "blur(10px)",
-                  border: "1px solid #1f1f1f",
+                  border: "1px solid #1A2744",
                 }}
               >
                 <div className="absolute top-3 right-3 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full blink" style={{ backgroundColor: "#00F0FF" }} />
+                  <span className="w-1.5 h-1.5 rounded-full blink" style={{ backgroundColor: "#F59E0B" }} />
                   <span className="text-[9px] tracking-widest" style={{ color: "#666" }}>LIVE</span>
                 </div>
                 <div
                   className="text-3xl font-bold mb-1"
-                  style={{ color: "#00F0FF", textShadow: "0 0 20px #00F0FF50" }}
+                  style={{ color: "#F59E0B", textShadow: "0 0 20px #F59E0B50" }}
                 >
                   {p.value}
                 </div>
@@ -172,3 +172,4 @@ export default function TerminalSection() {
     </section>
   );
 }
+

@@ -1,10 +1,10 @@
-interface Props {
+﻿interface Props {
   children: React.ReactNode;
   color?: "orange" | "cyan";
 }
 
 export default function SectionLabel({ children, color = "orange" }: Props) {
-  const dot = color === "orange" ? "#FF5500" : "#00F0FF";
+  const dot = color === "orange" ? "#3B82F6" : "#F59E0B";
   return (
     <div className="flex items-center gap-2 mb-4">
       <span
@@ -20,3 +20,4 @@ export default function SectionLabel({ children, color = "orange" }: Props) {
     </div>
   );
 }
+

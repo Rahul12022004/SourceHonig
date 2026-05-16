@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import { Target, Eye } from "lucide-react";
@@ -51,7 +51,7 @@ export default function MissionVision() {
             </h3>
             <p
               className="text-[15px] leading-[1.8]"
-              style={{ color: "#4a4a5a" }}
+              style={{ color: "#64748B" }}
             >
               {c.text}
             </p>
@@ -61,3 +61,4 @@ export default function MissionVision() {
     </section>
   );
 }
+

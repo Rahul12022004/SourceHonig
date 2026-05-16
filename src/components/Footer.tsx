@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Share2, Globe, Send } from "lucide-react";
 
@@ -146,3 +146,4 @@ export default function Footer() {
     </footer>
   );
 }
+

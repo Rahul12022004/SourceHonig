@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import { Zap, SquareStack, Flame, Droplets, ArrowUpDown } from "lucide-react";
@@ -45,8 +45,8 @@ const facilities = [
     icon: <ArrowUpDown size={32} strokeWidth={1.5} />,
     title: "Hydraulic Press",
     items: [
-      "Heavy duty: 150–500 tons",
-      "Medium/light: 10–75 tons",
+      "Heavy duty: 150â€“500 tons",
+      "Medium/light: 10â€“75 tons",
       "Versatile forming",
     ],
   },
@@ -123,3 +123,4 @@ export default function Facilities() {
     </section>
   );
 }
+

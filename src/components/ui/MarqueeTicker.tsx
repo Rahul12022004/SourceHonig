@@ -1,4 +1,4 @@
-const items = [
+﻿const items = [
   "HONEY EXPORT",
   "PRECISION MANUFACTURING",
   "GLOBAL SOURCING",
@@ -14,7 +14,7 @@ export default function MarqueeTicker() {
   return (
     <div
       className="overflow-hidden py-4 border-y"
-      style={{ borderColor: "#1f1f1f", backgroundColor: "#080808" }}
+      style={{ borderColor: "#1A2744", backgroundColor: "#070B14" }}
     >
       <div className="marquee-track">
         {repeated.map((item, i) => (
@@ -24,10 +24,11 @@ export default function MarqueeTicker() {
             style={{ color: "#333" }}
           >
             {item}
-            <span style={{ color: "#FF5500" }}>◆</span>
+            <span style={{ color: "#3B82F6" }}>â—†</span>
           </span>
         ))}
       </div>
     </div>
   );
 }
+

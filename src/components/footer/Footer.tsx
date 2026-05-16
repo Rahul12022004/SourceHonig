@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import MarqueeTicker from "@/components/ui/MarqueeTicker";
@@ -18,13 +18,13 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#050505" }}>
+    <footer style={{ backgroundColor: "#060A12" }}>
       <MarqueeTicker />
 
       <div className="max-w-[1240px] mx-auto px-6 pt-16 pb-0">
         <div
           className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 pb-12 border-b"
-          style={{ borderColor: "#1f1f1f" }}
+          style={{ borderColor: "#1A2744" }}
         >
           {/* Brand */}
           <motion.div
@@ -41,7 +41,7 @@ export default function Footer() {
               </span>
               <span
                 className="text-xl font-light tracking-[0.2em]"
-                style={{ color: "#FF5500", fontFamily: "var(--font-lora)" }}
+                style={{ color: "#3B82F6", fontFamily: "var(--font-lora)" }}
               >
                 EXPORT
               </span>
@@ -60,16 +60,16 @@ export default function Footer() {
                   aria-label={s.label}
                   data-cursor="block"
                   className="w-10 h-10 flex items-center justify-center transition-all duration-300 relative group"
-                  style={{ border: "1px solid #1f1f1f", color: "#444" }}
+                  style={{ border: "1px solid #1A2744", color: "#444" }}
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "#FF5500";
-                    el.style.color = "#FF5500";
-                    el.style.boxShadow = "0 0 14px #FF550030";
+                    el.style.borderColor = "#3B82F6";
+                    el.style.color = "#3B82F6";
+                    el.style.boxShadow = "0 0 14px #3B82F630";
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget;
-                    el.style.borderColor = "#1f1f1f";
+                    el.style.borderColor = "#1A2744";
                     el.style.color = "#444";
                     el.style.boxShadow = "none";
                   }}
@@ -77,7 +77,7 @@ export default function Footer() {
                   {/* top neon edge */}
                   <div
                     className="absolute top-0 left-0 right-0 h-[1px] opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ backgroundColor: "#FF5500" }}
+                    style={{ backgroundColor: "#3B82F6" }}
                   />
                   {s.icon}
                 </a>
@@ -96,7 +96,7 @@ export default function Footer() {
             >
               <h4
                 className="text-[11px] tracking-widest uppercase mb-5"
-                style={{ color: "#E0E0E0" }}
+                style={{ color: "#F1F5F9" }}
               >
                 {heading}
               </h4>
@@ -107,7 +107,7 @@ export default function Footer() {
                     href="#"
                     className="text-xs py-1.5 transition-all duration-200"
                     style={{ color: "#444" }}
-                    onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#FF5500")}
+                    onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#3B82F6")}
                     onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#444")}
                   >
                     {l}
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center py-5 gap-3">
           <p className="text-[11px]" style={{ color: "#333" }}>
-            © 2026 Honey Export. All Rights Reserved.
+            Â© 2026 Honey Export. All Rights Reserved.
           </p>
 
           {/* Status indicator */}
@@ -140,7 +140,7 @@ export default function Footer() {
                 href="#"
                 className="text-[11px] transition-colors duration-200"
                 style={{ color: "#333" }}
-                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#FF5500")}
+                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#3B82F6")}
                 onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#333")}
               >
                 {l}
@@ -152,3 +152,4 @@ export default function Footer() {
     </footer>
   );
 }
+

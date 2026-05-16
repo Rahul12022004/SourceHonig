@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { forwardRef, useImperativeHandle, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
@@ -12,17 +12,17 @@ export interface ContainerHandles {
 }
 
 const metalMat = new THREE.MeshStandardMaterial({
-  color: "#151515",
+  color: "#0D1525",
   metalness: 0.92,
   roughness: 0.28,
 });
 const doorMat = new THREE.MeshStandardMaterial({
-  color: "#0d0d0d",
+  color: "#080E1C",
   metalness: 0.95,
   roughness: 0.18,
 });
 const ridgeMat = new THREE.MeshStandardMaterial({
-  color: "#1e1e1e",
+  color: "#1A2744",
   metalness: 0.85,
   roughness: 0.4,
 });
@@ -87,7 +87,7 @@ const ShippingContainer = forwardRef<ContainerHandles>((_, ref) => {
         ))
       )}
 
-      {/* LEFT DOOR GROUP — pivot at x=-3.95, z=+1.33 */}
+      {/* LEFT DOOR GROUP â€” pivot at x=-3.95, z=+1.33 */}
       <group ref={leftDoorRef} position={[-3.95, 0, 1.33]}>
         <mesh material={doorMat} position={[1.975, 0, 0.035]}>
           <boxGeometry args={[3.88, 2.5, 0.06]} />
@@ -100,7 +100,7 @@ const ShippingContainer = forwardRef<ContainerHandles>((_, ref) => {
         ))}
       </group>
 
-      {/* RIGHT DOOR GROUP — pivot at x=+3.95, z=+1.33 */}
+      {/* RIGHT DOOR GROUP â€” pivot at x=+3.95, z=+1.33 */}
       <group ref={rightDoorRef} position={[3.95, 0, 1.33]}>
         <mesh material={doorMat} position={[-1.975, 0, 0.035]}>
           <boxGeometry args={[3.88, 2.5, 0.06]} />
@@ -112,17 +112,17 @@ const ShippingContainer = forwardRef<ContainerHandles>((_, ref) => {
         ))}
       </group>
 
-      {/* INTERIOR — visible when doors open */}
+      {/* INTERIOR â€” visible when doors open */}
       <mesh position={[0, 0, 1.28]}>
         <planeGeometry args={[7.8, 2.4]} />
-        <meshStandardMaterial color="#001a1a" emissive="#00F0FF" emissiveIntensity={0} />
+        <meshStandardMaterial color="#0a1428" emissive="#F59E0B" emissiveIntensity={0} />
       </mesh>
 
       {/* INTERIOR POINT LIGHT */}
       <pointLight
         ref={interiorLightRef}
         position={[0, 0, 0.8]}
-        color="#00F0FF"
+        color="#F59E0B"
         intensity={0}
         distance={6}
       />
@@ -132,3 +132,4 @@ const ShippingContainer = forwardRef<ContainerHandles>((_, ref) => {
 
 ShippingContainer.displayName = "ShippingContainer";
 export default ShippingContainer;
+

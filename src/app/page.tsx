@@ -1,10 +1,11 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import LoadingScreen from "@/components/loading/LoadingScreen";
 import NavHeader from "@/components/nav/NavHeader";
 import HeroSection from "@/components/hero/HeroSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
+import AnimatedWorld from "@/components/sections/AnimatedWorld";
 import HorizontalScroll from "@/components/sections/HorizontalScroll";
 import StatsSection from "@/components/sections/StatsSection";
 import TerminalSection from "@/components/sections/TerminalSection";
@@ -21,6 +22,7 @@ export default function Home() {
       <NavHeader />
       <main>
         <HeroSection />
+        <AnimatedWorld />
         <SolutionsSection />
         <HorizontalScroll />
         <StatsSection />
@@ -32,3 +34,4 @@ export default function Home() {
     </>
   );
 }
+

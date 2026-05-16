@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Phone, Mail, Globe } from "lucide-react";
 
@@ -36,3 +36,4 @@ export default function TopBar() {
     </div>
   );
 }
+

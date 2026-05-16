@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, MouseEvent } from "react";
 import { motion } from "motion/react";
@@ -47,8 +47,8 @@ export default function ContainerCard({
       ref={cardRef}
       className={`relative flex flex-col p-8 transition-transform duration-300 ${className}`}
       style={{
-        backgroundColor: "#111111",
-        border: "1px solid #1f1f1f",
+        backgroundColor: "#0D1525",
+        border: "1px solid #1A2744",
         borderRadius: "2px",
         willChange: "transform",
       }}
@@ -59,8 +59,8 @@ export default function ContainerCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       whileHover={{
-        borderColor: "#FF550060",
-        boxShadow: "0 0 30px #FF550020, 0 20px 40px rgba(0,0,0,0.4)",
+        borderColor: "#3B82F660",
+        boxShadow: "0 0 30px #3B82F620, 0 20px 40px rgba(0,0,0,0.4)",
       }}
       transition={{ duration: 0.5 }}
     >
@@ -68,17 +68,17 @@ export default function ContainerCard({
       <div
         className="absolute top-0 left-0 right-0 h-[2px]"
         style={{
-          background: "linear-gradient(90deg, #FF5500, #FF550000)",
+          background: "linear-gradient(90deg, #3B82F6, #3B82F600)",
         }}
       />
 
       {icon && (
-        <div className="mb-6 text-[#FF5500]">{icon}</div>
+        <div className="mb-6 text-[#3B82F6]">{icon}</div>
       )}
 
       <h3
         className="text-base font-semibold mb-3 tracking-wide"
-        style={{ color: "#E0E0E0" }}
+        style={{ color: "#F1F5F9" }}
       >
         {title}
       </h3>
@@ -88,8 +88,8 @@ export default function ContainerCard({
       </p>
 
       {stat && (
-        <div className="mt-6 pt-6 border-t" style={{ borderColor: "#1f1f1f" }}>
-          <div className="text-3xl font-bold" style={{ color: "#FF5500" }}>
+        <div className="mt-6 pt-6 border-t" style={{ borderColor: "#1A2744" }}>
+          <div className="text-3xl font-bold" style={{ color: "#3B82F6" }}>
             {stat}
           </div>
           {statLabel && (
@@ -104,3 +104,4 @@ export default function ContainerCard({
     </motion.div>
   );
 }
+

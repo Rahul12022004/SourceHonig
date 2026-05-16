@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -11,8 +11,8 @@ import { BatteryCharging, Grid3x3, LayoutGrid, Rows3, SignpostBig, Truck } from 
 gsap.registerPlugin(ScrollTrigger);
 
 const items = [
-  { icon: <BatteryCharging size={28} strokeWidth={1.5} />, title: "EV Charging Panels", description: "Precision panels for electric vehicle charging infrastructure — built to UL standards.", stat: "500V", statLabel: "Max rated voltage" },
-  { icon: <Truck size={28} strokeWidth={1.5} />, title: "Walk-in Coolers", description: "Display walk-in coolers and cold room systems for food and pharmaceutical storage.", stat: "-25°C", statLabel: "Operating temp" },
+  { icon: <BatteryCharging size={28} strokeWidth={1.5} />, title: "EV Charging Panels", description: "Precision panels for electric vehicle charging infrastructure â€” built to UL standards.", stat: "500V", statLabel: "Max rated voltage" },
+  { icon: <Truck size={28} strokeWidth={1.5} />, title: "Walk-in Coolers", description: "Display walk-in coolers and cold room systems for food and pharmaceutical storage.", stat: "-25Â°C", statLabel: "Operating temp" },
   { icon: <Grid3x3 size={28} strokeWidth={1.5} />, title: "Supermarket Storage", description: "Gondola and heavy-duty storage rack systems for retail environments.", stat: "1.2T", statLabel: "Load capacity" },
   { icon: <LayoutGrid size={28} strokeWidth={1.5} />, title: "Gondola Racks", description: "Retail display and merchandising rack systems built for durability.", stat: "8ft", statLabel: "Standard height" },
   { icon: <Rows3 size={28} strokeWidth={1.5} />, title: "Cigarette Display", description: "Customized secure display solutions for retail convenience environments.", stat: "100+", statLabel: "SKU configurations" },
@@ -59,7 +59,7 @@ export default function HorizontalScroll() {
       <div
         ref={stickyRef}
         className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center"
-        style={{ backgroundColor: "#080808" }}
+        style={{ backgroundColor: "#070B14" }}
       >
         {/* Section label */}
         <div className="px-12 mb-8 flex items-center justify-between">
@@ -67,25 +67,25 @@ export default function HorizontalScroll() {
             <SectionLabel>Services</SectionLabel>
             <h2
               className="text-[clamp(1.5rem,3vw,2.5rem)] font-bold"
-              style={{ color: "#E0E0E0" }}
+              style={{ color: "#F1F5F9" }}
             >
               Product Range
             </h2>
           </div>
           <span className="text-[11px] tracking-widest hidden md:block" style={{ color: "#666" }}>
-            SCROLL TO EXPLORE →
+            SCROLL TO EXPLORE â†’
           </span>
         </div>
 
         {/* Conveyor line */}
         <div
           className="h-px w-full mb-8 relative overflow-hidden"
-          style={{ backgroundColor: "#1f1f1f" }}
+          style={{ backgroundColor: "#1A2744" }}
         >
           <motion.div
             className="absolute inset-y-0 left-0 w-32"
             style={{
-              background: "linear-gradient(90deg, transparent, #FF5500, transparent)",
+              background: "linear-gradient(90deg, transparent, #3B82F6, transparent)",
             }}
             animate={{ x: ["-128px", "100vw"] }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
@@ -110,3 +110,4 @@ export default function HorizontalScroll() {
     </div>
   );
 }
+

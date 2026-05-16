@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
@@ -9,13 +9,13 @@
   --font-mono: monospace;
 
   /* Brand */
-  --color-bg:        #080808;
-  --color-surface:   #111111;
-  --color-border:    #1f1f1f;
-  --color-orange:    #FF5500;
-  --color-cyan:      #00F0FF;
-  --color-text:      #E0E0E0;
-  --color-dim:       #666666;
+  --color-bg:        #070B14;
+  --color-surface:   #0D1525;
+  --color-border:    #1A2744;
+  --color-orange:    #3B82F6;
+  --color-cyan:      #F59E0B;
+  --color-text:      #F1F5F9;
+  --color-dim:       #64748B;
 
   /* shadcn compat */
   --color-background:        var(--background);
@@ -38,24 +38,24 @@
 }
 
 :root {
-  --background: #080808;
-  --foreground: #E0E0E0;
-  --card: #111111;
-  --card-foreground: #E0E0E0;
-  --popover: #111111;
-  --popover-foreground: #E0E0E0;
-  --primary: #FF5500;
-  --primary-foreground: #080808;
-  --secondary: #1f1f1f;
-  --secondary-foreground: #E0E0E0;
-  --muted: #1f1f1f;
-  --muted-foreground: #666666;
-  --accent: #1f1f1f;
-  --accent-foreground: #E0E0E0;
+  --background: #070B14;
+  --foreground: #F1F5F9;
+  --card: #0D1525;
+  --card-foreground: #F1F5F9;
+  --popover: #0D1525;
+  --popover-foreground: #F1F5F9;
+  --primary: #3B82F6;
+  --primary-foreground: #070B14;
+  --secondary: #1A2744;
+  --secondary-foreground: #F1F5F9;
+  --muted: #1A2744;
+  --muted-foreground: #64748B;
+  --accent: #1A2744;
+  --accent-foreground: #F1F5F9;
   --destructive: #ff3333;
-  --border: #1f1f1f;
-  --input: #1f1f1f;
-  --ring: #FF5500;
+  --border: #1A2744;
+  --input: #1A2744;
+  --ring: #3B82F6;
   --radius: 0.25rem;
 }
 
@@ -63,8 +63,8 @@
   * { @apply border-border outline-ring/50; box-sizing: border-box; }
   html { scroll-behavior: auto; }
   body {
-    background: #080808;
-    color: #E0E0E0;
+    background: #070B14;
+    color: #F1F5F9;
     font-family: var(--font-lora), serif;
     overflow-x: hidden;
     cursor: none;
@@ -103,8 +103,8 @@
 
 /* Neon pulse */
 @keyframes neon-pulse {
-  0%, 100% { box-shadow: 0 0 6px #FF5500, 0 0 20px #FF550040; }
-  50%       { box-shadow: 0 0 12px #FF5500, 0 0 40px #FF550060; }
+  0%, 100% { box-shadow: 0 0 6px #3B82F6, 0 0 20px #3B82F640; }
+  50%       { box-shadow: 0 0 12px #3B82F6, 0 0 40px #3B82F660; }
 }
 
 /* Scanner */
@@ -112,3 +112,4 @@
   from { transform: scaleX(0); transform-origin: left; }
   to   { transform: scaleX(1); transform-origin: left; }
 }
+

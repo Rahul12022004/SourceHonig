@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import { Wrench, Zap, Snowflake, BatteryCharging, Grid3x3, LayoutGrid, Rows3, SignpostBig } from "lucide-react";
@@ -103,3 +103,4 @@ export default function Products() {
     </section>
   );
 }
+

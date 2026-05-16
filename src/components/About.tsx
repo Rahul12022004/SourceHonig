@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import { CheckCircle2, Truck } from "lucide-react";
@@ -28,14 +28,14 @@ export default function About() {
           </h2>
           <p
             className="text-[15px] leading-[1.8] mb-4"
-            style={{ color: "#4a4a5a" }}
+            style={{ color: "#64748B" }}
           >
             Welcome to Honey Export, where we redefine procurement with the
             power of collaboration.
           </p>
           <p
             className="text-[15px] leading-[1.8] mb-4"
-            style={{ color: "#4a4a5a" }}
+            style={{ color: "#64748B" }}
           >
             We specialize in sourcing a wide range of products for the USA
             market, particularly North America. Our offerings include display
@@ -107,3 +107,4 @@ export default function About() {
     </section>
   );
 }
+

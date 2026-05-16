@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { motion } from "motion/react";
@@ -124,3 +124,4 @@ export default function Industries() {
     </section>
   );
 }
+

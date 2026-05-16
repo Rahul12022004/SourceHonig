@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -61,7 +61,7 @@ export default function Leadership() {
               </span>
               <p
                 className="text-[15px] leading-[1.9] mb-4"
-                style={{ color: "#4a4a5a" }}
+                style={{ color: "#64748B" }}
               >
                 I am the Founder and Chief Executive Officer of Honey Exports, a
                 company established in June 2018. The organization was founded
@@ -72,7 +72,7 @@ export default function Leadership() {
               </p>
               <p
                 className="text-[15px] leading-[1.9] mb-4"
-                style={{ color: "#4a4a5a" }}
+                style={{ color: "#64748B" }}
               >
                 Honey Exports specializes in the manufacturing and export of
                 cold room and display walk-in cooler solutions, along with
@@ -83,7 +83,7 @@ export default function Leadership() {
               </p>
               <p
                 className="text-[15px] leading-[1.9]"
-                style={{ color: "#4a4a5a" }}
+                style={{ color: "#64748B" }}
               >
                 Our focus remains on delivering reliable, efficient, and
                 customized solutions that meet the evolving needs of our clients
@@ -132,3 +132,4 @@ export default function Leadership() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 
@@ -66,13 +66,13 @@ export default function CustomCursor() {
       <div
         ref={dotRef}
         className="fixed top-0 left-0 z-[9999] w-[10px] h-[10px] rounded-full pointer-events-none"
-        style={{ backgroundColor: "#FF5500", mixBlendMode: "difference" }}
+        style={{ backgroundColor: "#3B82F6", mixBlendMode: "difference" }}
       />
       {/* ring */}
       <div
         ref={ringRef}
         className="fixed top-0 left-0 z-[9998] pointer-events-none border transition-[width,height,border-radius] duration-200"
-        style={{ borderColor: "#FF5500", width: 40, height: 40, borderRadius: "50%" }}
+        style={{ borderColor: "#3B82F6", width: 40, height: 40, borderRadius: "50%" }}
       />
       {/* trail */}
       {Array.from({ length: 5 }).map((_, i) => (
@@ -80,9 +80,10 @@ export default function CustomCursor() {
           key={i}
           ref={(el) => { if (el) trailRefs.current[i] = el; }}
           className="fixed top-0 left-0 z-[9997] w-[6px] h-[6px] rounded-full pointer-events-none"
-          style={{ backgroundColor: "#FF5500" }}
+          style={{ backgroundColor: "#3B82F6" }}
         />
       ))}
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/providers/LenisProvider";
@@ -14,7 +14,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Honey Export | Precision Manufacturing & Sourcing Solutions",
   description:
-    "Honey Export — precision sheet metal fabrication, cold room solutions, and global sourcing for the North American market.",
+    "Honey Export â€” precision sheet metal fabrication, cold room solutions, and global sourcing for the North American market.",
 };
 
 export default function RootLayout({
@@ -31,3 +31,4 @@ export default function RootLayout({
     </html>
   );
 }
+

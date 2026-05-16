@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -41,7 +41,7 @@ export default function LoadingScreen({ onComplete }: Props) {
       ref={wrapRef}
       className="fixed inset-0 z-[9990] flex flex-col items-center justify-center"
       style={{
-        backgroundColor: "#080808",
+        backgroundColor: "#070B14",
         clipPath: "inset(0 0 0% 0)",
       }}
     >
@@ -57,20 +57,20 @@ export default function LoadingScreen({ onComplete }: Props) {
       <div className="mb-12 relative">
         <svg width="220" height="80" viewBox="0 0 220 80" fill="none">
           {/* body */}
-          <rect x="2" y="10" width="216" height="60" rx="2" stroke="#1f1f1f" strokeWidth="1.5" fill="#0d0d0d" />
+          <rect x="2" y="10" width="216" height="60" rx="2" stroke="#1A2744" strokeWidth="1.5" fill="#080E1C" />
           {/* ridges */}
           {Array.from({ length: 14 }).map((_, i) => (
             <line key={i} x1={2 + i * 16} y1="10" x2={2 + i * 16} y2="70" stroke="#1a1a1a" strokeWidth="1" />
           ))}
           {/* left door */}
-          <rect x="2" y="10" width="107" height="60" stroke="#FF5500" strokeWidth="0.5" fill="none" />
+          <rect x="2" y="10" width="107" height="60" stroke="#3B82F6" strokeWidth="0.5" fill="none" />
           {/* right door */}
-          <rect x="111" y="10" width="107" height="60" stroke="#FF5500" strokeWidth="0.5" fill="none" />
+          <rect x="111" y="10" width="107" height="60" stroke="#3B82F6" strokeWidth="0.5" fill="none" />
           {/* corner posts */}
           <rect x="2" y="8" width="6" height="64" fill="#222" />
           <rect x="212" y="8" width="6" height="64" fill="#222" />
           {/* orange glow top */}
-          <line x1="2" y1="10" x2="218" y2="10" stroke="#FF5500" strokeWidth="1" opacity="0.6" />
+          <line x1="2" y1="10" x2="218" y2="10" stroke="#3B82F6" strokeWidth="1" opacity="0.6" />
         </svg>
         {/* interior glow */}
         <div
@@ -88,20 +88,21 @@ export default function LoadingScreen({ onComplete }: Props) {
       </div>
 
       {/* Progress bar */}
-      <div className="w-[280px] h-[2px] relative" style={{ backgroundColor: "#1f1f1f" }}>
+      <div className="w-[280px] h-[2px] relative" style={{ backgroundColor: "#1A2744" }}>
         <div
           ref={barRef}
           className="absolute inset-y-0 left-0 w-full origin-left"
           style={{
-            backgroundColor: "#FF5500",
+            backgroundColor: "#3B82F6",
             transform: "scaleX(0)",
-            boxShadow: "0 0 12px #FF5500, 0 0 30px #FF550060",
+            boxShadow: "0 0 12px #3B82F6, 0 0 30px #3B82F660",
           }}
         />
       </div>
-      <div className="mt-3 text-[11px] font-mono" style={{ color: "#FF5500" }}>
+      <div className="mt-3 text-[11px] font-mono" style={{ color: "#3B82F6" }}>
         {String(pct).padStart(3, "0")}%
       </div>
     </div>
   );
 }
+
